@@ -358,7 +358,7 @@ figure .overlay:hover a {
 figure .buttons {
   position: absolute;
   top: 45%;
-  left: 24%;
+  left: 35%;
 }
 figure figcaption {
   padding: 20px 25px;
@@ -376,16 +376,16 @@ figure figcaption p {
   margin-bottom: 0;
   margin-top: 5px;
 }
-#feature {
+#contact {
   padding: 80px 0;
 }
-#feature .media {
+#contact .media {
   margin: 0px 0 70px 0;
 }
-#feature .media .media-left {
+#contact .media .media-left {
   padding-right: 25px;
 }
-#feature h3 {
+#contact h3 {
   color: #000;
   font-size: 18px;
   text-transform: uppercase;
@@ -394,12 +394,12 @@ figure figcaption p {
   margin: 0px 0px 15px;
   font-weight: 400;
 }
-#feature p {
+#contact p {
   line-height: 25px;
   font-size: 14px;
   color: #777777;
 }
-#feature .icon {
+#contact .icon {
   text-decoration: none;
   color: #fff;
   background-color: #02bdd5;

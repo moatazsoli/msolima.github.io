@@ -33,6 +33,8 @@
         <link rel="stylesheet" href="css/main.css">
         <!-- responsive css -->
         <link rel="stylesheet" href="css/responsive.css">
+
+    <link rel="stylesheet" href="css/timeline-style.css"> <!-- Resource style -->
         
         <!-- Template Javascript Files
         ================================================== -->
@@ -52,6 +54,8 @@
         <script src="js/jquery.fancybox.js"></script>
         <!-- template main js -->
         <script src="js/main.js"></script>
+
+        <script src="js/timeline-main.js"></script>
     </head>
     <body>
         <!--
@@ -85,28 +89,14 @@
                             <li>
                                 <a href="index.html" >Home</a>
                             </li>
-                            <li><a href="about.html">About</a></li>
-                            <li><a href="service.html">Service</a></li>
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages <span class="caret"></span></a>
-                                <div class="dropdown-menu">
-                                    <ul>
-                                        <li><a href="404.html">404 Page</a></li>
-                                        <li><a href="gallery.html">Gallery</a></li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog <span class="caret"></span></a>
-                                <div class="dropdown-menu">
-                                    <ul>
-                                        <li><a href="blog-fullwidth.html">Blog Full</a></li>
-                                        <li><a href="blog-left-sidebar.html">Blog Left sidebar</a></li>
-                                        <li><a href="blog-right-sidebar.html">Blog Right sidebar</a></li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li><a href="contact.html">Contact</a></li>
+                            <li><a class="smooth-scroll" data-section="#about"
+                            href="#about">About</a></li>
+                            <li><a class="smooth-scroll" data-section="#works"
+                            href="#works">Projects</a></li>
+                            <li><a class="smooth-scroll" data-section="#feature"
+                            href="#feature">My Story</a></li>
+                            <li><a class="smooth-scroll" data-section="#contact"
+                            href="#contact">Contact</a></li>
                         </ul>
                     </div>
                 </nav>
@@ -199,19 +189,19 @@
                                     <img src="images/portfolio/item-1.jpg" class="img-responsive" alt="this is a title" >
                                     <div class="overlay">
                                         <div class="buttons">
-                                            <a rel="gallery" class="fancybox" href="images/portfolio/item-1.jpg">Demo</a>
-                                            <a target="_blank" href="single-portfolio.html">Details</a>
+                                            <!-- <a rel="gallery" class="fancybox" href="images/portfolio/item-1.jpg">Demo</a> -->
+                                            <a data-toggle="modal" data-target="#myModal1"target="_blank" href="#">Details</a>
                                         </div>
                                     </div>
                                 </div>
                                 <figcaption>
                                 <h4>
-                                <a href="#">
-                                    Dew Drop
+                                <a href="#" data-toggle="modal" data-target="#myModal1">
+                                    Resto-Ionic
                                 </a>
                                 </h4>
                                 <p>
-                                    Redesigne UI Concept
+                                    Restaurant Mobile App based on Ionic Framework
                                 </p>
                                 </figcaption>
                             </figure>
@@ -222,19 +212,19 @@
                                     <img src="images/portfolio/item-2.jpg" class="img-responsive" alt="this is a title" >
                                     <div class="overlay">
                                         <div class="buttons">
-                                            <a rel="gallery" class="fancybox" href="images/portfolio/item-2.jpg">Demo</a>
-                                            <a target="_blank" href="single-portfolio.html">Details</a>
+                                            <!-- <a rel="gallery" class="fancybox" href="images/portfolio/item-2.jpg">Demo</a> -->
+                                            <a data-toggle="modal" data-target="#myModal2" target="_blank" href="#">Details</a>
                                         </div>
                                     </div>
                                 </div>
                                 <figcaption>
                                 <h4>
-                                <a href="#">
-                                    Bottle Mockup
+                                <a href="#" data-toggle="modal" data-target="#myModal2">
+                                    Fashion AI
                                 </a>
                                 </h4>
                                 <p>
-                                    Lorem ipsum dolor sit.
+                                    Shopify embedded App for Merchants
                                 </p>
                                 </figcaption>
                             </figure>
@@ -245,19 +235,19 @@
                                     <img src="images/portfolio/item-3.jpg" class="img-responsive" alt="" >
                                     <div class="overlay">
                                         <div class="buttons">
-                                            <a rel="gallery" class="fancybox" href="images/portfolio/item-3.jpg">Demo</a>
-                                            <a target="_blank" href="single-portfolio.html">Details</a>
+                                            <!-- <a rel="gallery" class="fancybox" href="images/portfolio/item-3.jpg">Demo</a> -->
+                                            <a target="_blank" href="#" data-toggle="modal" data-target="#myModal3">Details</a>
                                         </div>
                                     </div>
                                 </div>
                                 <figcaption>
                                 <h4>
-                                <a href="#">
-                                    Table Design
+                                <a href="#" data-toggle="modal" data-target="#myModal3">
+                                    PicShake
                                 </a>
                                 </h4>
                                 <p>
-                                    Lorem ipsum dolor sit amet.
+                                    Photosharing App for Android.
                                 </p>
                                 </figcaption>
                             </figure>
@@ -266,7 +256,7 @@
                     </div>
                     <br>
 
-                    
+
                 </div>
             </section> <!-- #works -->
             <!--
@@ -275,92 +265,45 @@
             ================================================== -->
             <section id="feature">
                 <div class="container">
+                
+                <br>
+                <hr>
                     <div class="section-heading">
-                        <h1 class="title wow fadeInDown" data-wow-delay=".3s">Offer From Me</h1>
-                        <p class="wow fadeInDown" data-wow-delay=".5s">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed,<br> quasi dolores numquam dolor vero ex, tempora commodi repellendus quod laborum.
-                        </p>
+                    <br>
+                    <br>
+                        <h1 class="title wow fadeInDown" data-wow-delay=".3s">Life Story</h1>
+                        <h1 class="title wow fadeInDown" data-wow-delay=".5s">
+                            Work Experience, Startups and Education
+                        </h1>
                     </div>
-                    <div class="row">
-                        <div class="col-md-4 col-lg-4 col-xs-12">
-                            <div class="media wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="300ms">
-                                <div class="media-left">
-                                    <div class="icon">
-                                        <i class="ion-ios-flask-outline"></i>
-                                    </div>
-                                </div>
-                                <div class="media-body">
-                                    <h4 class="media-heading">Media heading</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, sint.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-lg-4 col-xs-12">
-                            <div class="media wow fadeInDown animated" data-wow-duration="500ms" data-wow-delay="600ms">
-                                <div class="media-left">
-                                    <div class="icon">
-                                        <i class="ion-ios-lightbulb-outline"></i>
-                                    </div>
-                                </div>
-                                <div class="media-body">
-                                    <h4 class="media-heading">Well documented.</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, sint.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-lg-4 col-xs-12">
-                            <div class="media wow fadeInDown animated" data-wow-duration="500ms" data-wow-delay="900ms">
-                                <div class="media-left">
-                                    <div class="icon">
-                                        <i class="ion-ios-lightbulb-outline"></i>
-                                    </div>
-                                </div>
-                                <div class="media-body">
-                                    <h4 class="media-heading">Well documented.</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, sint.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-lg-4 col-xs-12">
-                            <div class="media wow fadeInDown animated" data-wow-duration="500ms" data-wow-delay="1200ms">
-                                <div class="media-left">
-                                    <div class="icon">
-                                        <i class="ion-ios-americanfootball-outline"></i>
-                                    </div>
-                                </div>
-                                <div class="media-body">
-                                    <h4 class="media-heading">Free updates</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, sint.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-lg-4 col-xs-12">
-                            <div class="media wow fadeInDown animated" data-wow-duration="500ms" data-wow-delay="1500ms">
-                                <div class="media-left">
-                                    <div class="icon">
-                                        <i class="ion-ios-keypad-outline"></i>
-                                    </div>
-                                </div>
-                                <div class="media-body">
-                                    <h4 class="media-heading">Solid Support</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, sint.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-lg-4 col-xs-12">
-                            <div class="media wow fadeInDown animated" data-wow-duration="500ms" data-wow-delay="1800ms">
-                                <div class="media-left">
-                                    <div class="icon">
-                                        <i class="ion-ios-barcode-outline"></i>
-                                    </div>
-                                </div>
-                                <div class="media-body">
-                                    <h4 class="media-heading">Simple Installation</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, sint.</p>
-                                </div>
-                            </div>
-                        </div>
+                    <div style="text-align: center;">
+                    <a class="my btn-lines dark light wow fadeInUp animated btn btn-default btn-green" data-wow-delay=".9s" data-toggle="modal" data-target="#myModal4">View Life Story</a>
+                    <style>
+                    .my {
+                        background: #414141;
+                        border: none;
+                        color: #fff;
+                        padding: 20px 35px;
+                        margin-top: 30px;
+                        font-size: 16px;
+                        font-size: 13px;
+                        line-height: 1em;
+                        text-transform: uppercase;
+                        letter-spacing: normal;
+                        border-radius: 0;
+                    }
+                    </style>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
                     </div>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <hr>
+                    
                 </div>
             </section> <!-- /#feature -->
                             
@@ -374,25 +317,79 @@
                         <div class="col-md-12">
                             <div class="block">
                                 <h2 class="title wow fadeInDown" data-wow-delay=".3s" data-wow-duration="500ms">SO WHAT YOU THINK ?</h1>
-                                <p class="wow fadeInDown" data-wow-delay=".5s" data-wow-duration="500ms">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis,<br>possimus commodi, fugiat magnam temporibus vero magni recusandae? Dolore, maxime praesentium.</p>
-                                <a href="contact.html" class="btn btn-default btn-contact wow fadeInDown" data-wow-delay=".7s" data-wow-duration="500ms">Contact With Me</a>
+                                <!-- <p class="wow fadeInDown" data-wow-delay=".5s" data-wow-duration="500ms">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis,<br>possimus commodi, fugiat magnam temporibus vero magni recusandae? Dolore, maxime praesentium.</p>
+                                <a href="contact.html" class="btn btn-default btn-contact wow fadeInDown" data-wow-delay=".7s" data-wow-duration="500ms">Contact With Me</a> -->
                             </div>
                         </div>
                         
                     </div>
                 </div>
             </section>
+
+
+            <section id="contact">
+                <div class="container">
+                    
+                    <div class="row">
+                        <div class="col-md-4 col-lg-4 col-xs-12">
+                            <div class="media wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="300ms">
+                                <div class="media-left">
+                                    <div class="icon">
+                                        <i class="ion-ios-flask-outline"></i>
+                                    </div>
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="media-heading">GitHub Repo</h4>
+                                    <p>View my project at github:<br>
+                                    <a href= "https://github.com/msolima">My Repo</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-lg-4 col-xs-12">
+                            <div class="media wow fadeInDown animated" data-wow-duration="500ms" data-wow-delay="600ms">
+                                <div class="media-left">
+                                    <div class="icon">
+                                        <i class="ion-social-linkedin"></i>
+                                    </div>
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="media-heading">LinkedIn.</h4>
+                                    <p>View my linkedIn profile at:<br>
+                                    <a href= "https://ca.linkedin.com/in/moataz-soliman-80894264">My Profile</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-lg-4 col-xs-12">
+                            <div class="media wow fadeInDown animated" data-wow-duration="500ms" data-wow-delay="900ms">
+                                <div class="media-left">
+                                    <div class="icon">
+                                        <i class="ion-ios-email-outline"></i>
+                                    </div>
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="media-heading">Email</h4>
+                                    <p>Email my at: <a href= "mailto:moatazsolima@gmail.com">moatazsolima@gmail.com</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </section> <!-- /#feature -->
+
+
             <!--
             ==================================================
             Footer Section Start
             ================================================== -->
-            <footer id="footer">
+            <!-- <footer id="footer">
                 <div class="container">
                     <div class="col-md-8">
                         <p class="copyright">Copyright: <span>2015</span> . Design and Developed by <a href="http://www.Themefisher.com">Themefisher</a></p>
                     </div>
                     <div class="col-md-4">
-                        <!-- Social Media -->
                         <ul class="social">
                             <li>
                                 <a href="http://wwww.fb.com/themefisher" class="Facebook">
@@ -417,7 +414,268 @@
                         </ul>
                     </div>
                 </div>
-            </footer> <!-- /#footer -->
+            </footer>  --><!-- /#footer -->
+
+            <!-- Modal -->
+<div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Resto-Ionic</h4>
+      </div>
+      <div class="modal-body">
+        <p>
+        Resto-Ionic is a mobile app for restaurant owners based on Ionic 2 framework.
+        <br>
+        The app supports both Android and IOS.
+        <br>
+        <br>
+        Using this app, restaurant owners can transform the restaurant dine-in experience to 
+        a full digital experience through customers smart phones.
+        <br>
+        Customers can use their smart phones to make orders and get live updates on the order status.
+        <br>
+        <br>
+        The app also provides customer insights and analytics for restaurant owners.
+        <br>
+        <br>
+        <a href="https://github.com/msolima/ionic2-restaurant-mobile-app">GitHub Repo</a>
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+            <!-- Modal -->
+<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Fashion AI for Merchants</h4>
+      </div>
+      <div class="modal-body">
+        <p>
+        Shopify Embedded App that uses Fashion + Machine Learning to make it easier for 
+        Merchants to add new prodocuts with the most effective Title, Description and tags.
+        <br>
+        The app can be integrated with any shopify store.
+        <br>
+        <br>
+        Merchants can use the app to upload a picture of a piece of clothing. Whether the picture is of a piece of clothing or a person wearing an  outfit.
+        <br>
+        The machine learning algorithm will identify the image and give recommendations for tags, title and descriptions that can be used to create a new product.
+        <br>
+        <br>
+        Shopify data collected from sales of several stores can be used to identify the trending tags and titles that attracts people the most. The data can feed the machine learning algorithm to give better recommendations to the Merchants.
+        <br>
+        <br>
+        Superviosed machine learning has been used with over 80,000 images to train the AI models. 14 clothing classes have been identified.
+        <br>
+        <br>
+        This apps currently only works with the following pieces:<br>
+
+        shortdress shirt blouses coat sweater cloak uniform jacket tshirt longdress suit sportshirt robe vest
+        <br>
+        <br>
+        <a href="https://github.com/msolima/fashionAI_Shopify_App">GitHub Repo</a>
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+            <!-- Modal -->
+<div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">PicShake</h4>
+      </div>
+      <div class="modal-body">
+        <p>
+            PicShake: Snap, Shake, Share!
+            <br>
+            <br>
+            PicShake is a mobile app that lets you share pictures with your friends and family using simple phone shake gestures. 
+            <br>
+            <br>
+            Photos are tagged with a user password and geolocation info to create dynamic live albums online accessible by friends and family. 
+            <br>
+            No need to create a group, tag people online, or even have their contact information.
+            <br>
+            <br>
+            <a href="https://www.youtube.com/watch?v=MEMh4Qg3aOY">Youtube Promo Video</a>
+            <br>
+            <a href="https://github.com/msolima/picshake-django-server">GitHub Repo - Server</a>
+            <br>
+            <a href="https://github.com/msolima/picshake-android-client">GitHub Repo - Client</a>
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+            <!-- Modal -->
+<div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Life Story</h4>
+      </div>
+      <div class="modal-body">
+        <section id="cd-timeline" class="cd-container">
+        <div class="cd-timeline-block">
+            <div class="cd-timeline-img cd-picture">
+                <img src="img/gear.svg" alt="Picture">
+            </div> <!-- cd-timeline-img -->
+
+            <div class="cd-timeline-content">
+                <h2>Team Lead / Big Data Software Developer at Nokia</h2>
+                <p>Led product development of NSP Analytics from initial concept to release while collaborating with Corporate Strategy Managers, Sales Directors and Product Line Managers.</p>
+                <!-- <a href="#0" class="cd-read-more">Read more</a> -->
+                <span class="cd-date">Jan 2015 - Present</span>
+            </div> <!-- cd-timeline-content -->
+        </div> <!-- cd-timeline-block -->
+
+        <div class="cd-timeline-block">
+            <div class="cd-timeline-img cd-movie">
+                <img src="img/play.svg" alt="Movie">
+            </div> <!-- cd-timeline-img -->
+
+            <div class="cd-timeline-content">
+                <h2>Co-Founded Valyria Inc.</h2>
+                <p>Managed multiple consumer mobile products and architected these projects from inception to delivery.</p>
+                <!-- <a href="#0" class="cd-read-more">Read more</a> -->
+                <span class="cd-date">May 2014</span>
+            </div> <!-- cd-timeline-content -->
+        </div> <!-- cd-timeline-block -->
+
+        <div class="cd-timeline-block">
+            <div class="cd-timeline-img cd-location">
+                <img src="img/gradhat.svg" alt="Location">
+            </div> <!-- cd-timeline-img -->
+
+            <div class="cd-timeline-content">
+                <h2>Telfer School of Management at the University of Ottawa</h2>
+                <p>Master's degree in Engineering Management.</p>
+                <!-- <a href="#0" class="cd-read-more">Read more</a> -->
+                <span class="cd-date">June 2016</span>
+            </div> <!-- cd-timeline-content -->
+        </div> <!-- cd-timeline-block -->
+
+        <div class="cd-timeline-block">
+            <div class="cd-timeline-img cd-picture">
+                <img src="img/gear.svg" alt="Picture">
+            </div> <!-- cd-timeline-img -->
+
+            <div class="cd-timeline-content">
+                <h2>Intermediate Big Data Software Developer at Nokia</h2>
+                <p>Put the initial design and developed a complete big data solution (NSP Analytics) for telecom and ISP customers. The solution includes different components for Distributed data migration, Data exploitation and Operational reporting.</p>
+                <!-- <a href="#0" class="cd-read-more">Read more</a> -->
+                <span class="cd-date">Nov 2014</span>
+            </div> <!-- cd-timeline-content -->
+        </div> <!-- cd-timeline-block -->
+
+        <div class="cd-timeline-block">
+            <div class="cd-timeline-img cd-location">
+                <img src="img/gear.svg" alt="Location">
+            </div> <!-- cd-timeline-img -->
+
+            <div class="cd-timeline-content">
+                <h2>Software Designer</h2>
+                <p>Designed and implemented several features of SAM OAM module for the service aware manager at Nokia.</p>
+                <!-- <a href="#0" class="cd-read-more">Read more</a> -->
+                <span class="cd-date">Jun 2013 - Nov 2014</span>
+            </div> <!-- cd-timeline-content -->
+        </div> <!-- cd-timeline-block -->
+
+        <div class="cd-timeline-block">
+            <div class="cd-timeline-img cd-movie">
+                <img src="img/gradhat.svg" alt="Movie">
+            </div> <!-- cd-timeline-img -->
+
+            <div class="cd-timeline-content">
+                <h2>Carleton University</h2>
+                <p>Bachelor of Engineering (B.Eng.) Software Engineering</p>
+                <!-- <a href="#0" class="cd-read-more">Read more</a> -->
+                <span class="cd-date">Jun 2013</span>
+            </div> <!-- cd-timeline-content -->
+        </div> <!-- cd-timeline-block -->
+
+        <div class="cd-timeline-block">
+            <div class="cd-timeline-img cd-location">
+                <img src="img/gear.svg" alt="">
+            </div> <!-- cd-timeline-img -->
+
+            <div class="cd-timeline-content">
+                <h2>Software Dev (Coop) at Ericsson</h2>
+                <p>Designed and developed different JAVA simulation scenarios of LTE Radio Networks and devices on a LTE network simulator platform which helped to aid in the design and evolution of LTE solutions.</p>
+                <!-- <a href="#0" class="cd-read-more">Read more</a> -->
+                <span class="cd-date">May 2011 - Aug 2011</span>
+            </div> <!-- cd-timeline-content -->
+        </div> <!-- cd-timeline-block -->
+
+        <div class="cd-timeline-block">
+            <div class="cd-timeline-img cd-location">
+                <img src="img/gear.svg" alt="Location">
+            </div> <!-- cd-timeline-img -->
+
+            <div class="cd-timeline-content">
+                <h2>Software Dev (Coop) at Blackberry</h2>
+                <p>Played an active role in the full development life cycle of a new automation testing and scheduling system which maximizes the levels of productivity and the quality of testing new software versions and new BlackBerry and Playbook devices.</p>
+                <!-- <a href="#0" class="cd-read-more">Read more</a> -->
+                <span class="cd-date">May 2012 - Aug 2012</span>
+            </div> <!-- cd-timeline-content -->
+        </div> <!-- cd-timeline-block -->
+
+        <div class="cd-timeline-block">
+            <div class="cd-timeline-img cd-location">
+                <img src="img/gear.svg" alt="Location">
+            </div> <!-- cd-timeline-img -->
+
+            <div class="cd-timeline-content">
+                <h2>Software Dev (Coop) at Ericsson</h2>
+                <p>Designed and developed different JAVA simulation scenarios of LTE Radio Networks and devices on a LTE network simulator platform which helped to aid in the design and evolution of LTE solutions.</p>
+                <!-- <a href="#0" class="cd-read-more">Read more</a> -->
+                <span class="cd-date">May 2011 - Aug 2011</span>
+            </div> <!-- cd-timeline-content -->
+        </div> <!-- cd-timeline-block -->
+
+        <div class="cd-timeline-block">
+            <div class="cd-timeline-img cd-movie">
+                <img src="img/sar.svg" alt="Movie">
+            </div> <!-- cd-timeline-img -->
+
+            <div class="cd-timeline-content">
+                <h2>Wrote my first program</h2>
+                <p>In grade 6, I wrote my first program in BASIC</p>
+                <span class="cd-date">2000</span>
+            </div> <!-- cd-timeline-content -->
+        </div> <!-- cd-timeline-block -->
+    </section> <!-- cd-timeline -->
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
                 
         </body>
     </html>
